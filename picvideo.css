@@ -1,0 +1,152 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Avanta Garde;
+}
+
+
+/* First img resize, then containter, then container and card */
+body{
+	display:flex;  /* Make all three images align on the same line */
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+}
+.container{
+	display:flex;
+}
+
+.card{
+	height:300px;
+	margin: 50px;
+	box-shadow: 5px 5px 20px black;
+	overflow:hidden;
+}
+img{
+	height: 300px; 
+	width: 300px;
+	transition: 0.5s; /* At the end*/
+}
+
+
+.intro{
+height:10px; /* Intial height :150px. To see whole card on top of the img box. Then change it to 50px to only see the heading */
+width:300px; 
+padding:6px;
+box-sizing:border-box;
+position:absolute;
+background: transparent;
+color:white;
+position: absolute;
+bottom:305px; /* Push the text box up to algin with the card*/
+transition: 0.5s; /* At the end*/
+}
+
+h1{
+	margin: 10px;
+	font-size: 20px;
+}
+ p{
+ 	font-size:10px;
+ 	margin:10px;
+ 	visibility: hidden; /* Make the text hidden*/
+ 	opacity:0;
+ }
+ span{
+ 	font-weight: bold;
+ }
+
+ .card:hover{
+ 	cursor: pointer;
+ }
+
+ .card:hover .intro{
+ 	height: 180px;
+ 	bottom:250px;
+ 	background: green;
+ }
+
+ .card:hover p{
+ 	opacity: 1;
+ 	visibility: visible;
+ }
+
+ .card:hover img{
+ 	transform: scale(1.1) rotate(3deg);
+ }
+
+#video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-5;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Bangers', cursive;
+	font-size: 22px;
+	color: white;
+}
+
+
+button {
+    background-color: rebeccapurple;
+    border: none;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+button.active {
+    transform: translateX(-180px);
+}
+
+nav {
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.active {
+    transform: translateX(0);
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+

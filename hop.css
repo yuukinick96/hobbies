@@ -1,0 +1,107 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.mini img{
+	height: 100px;  /*Arrange the mini pic*/
+	width:100px;
+	margin: 10px 0;
+	cursor: pointer;
+	display:block;
+	opacity:0.6; /*Write this property after :hover*/
+}
+
+.main{
+	top:50%;
+	left:30%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+.mini{          /*Move the mini pic to left*/
+	float:left;
+}
+
+
+.main-container img{     /*Main Pic*/
+	
+	height: 540px;
+	width: 600px;
+}
+
+.main-container{   /*Align main pic with sub pic*/
+	float:right;
+	padding: 10px;
+}
+
+
+
+
+.mini img:hover{
+	opacity:1;
+}
+
+ .column {
+  flex: 50%;
+
+
+}
+
+.row {
+  display: flex;
+}
+
+
+ .column p {
+  top: 200px;
+  color:#ed972f;
+  
+}
+
+ .column h1 {
+  color:transparent;
+  background-image: linear-gradient(to left, orange 0%,orangered 29% ,coral 67% ,yellow 100%);
+  background-position:100%;
+  background-size:200% 100%;
+  background-clip:text;
+  text-fill-color: transparent;
+  -webkit-background-clip:text;
+ animation: animate 3s linear infinite;
+ -webkit-animation: animate 3s linear infinite;
+ 
+  
+}
+
+@keyframes animate{
+	to{
+		background-position: 200% center;
+	}
+	
+}
+
+-webkit-@keyframes animate{
+	to{
+		background-position: 200% center;
+	}
+}
+
+
+
+#para{
+	position: absolute;
+	left:1000px;
+	top: 200px;
+	padding-right:150px;
+	padding-top: 150px;
+}
+
+#video{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index:-5;
+}
+

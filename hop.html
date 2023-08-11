@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hiphop </title>
+	<link rel = "stylesheet" href="hop.css">
+	</head>
+
+	<body>
+		<video autoplay muted id="video">
+  <source src="color.mp4" type="video/mp4">
+</video>
+
+		<!-- onclick after hover css -->
+		<div class = "row">
+			<div class = "column">
+		       <div class = "main">
+			     <div class = "mini">
+				<img src = "https://t3.ftcdn.net/jpg/03/72/71/80/360_F_372718076_pLwDA6fUUDDWvgETtDOr67dUymN8Nzb3.jpg" onclick = "changePic(this)">
+				<img src = "https://upload.wikimedia.org/wikipedia/commons/f/fc/B-boy_breakdancing.jpg"  onclick = "changePic(this)">
+				<img src = "https://i1.sndcdn.com/artworks-000114462351-nne50b-t500x500.jpg"  onclick = "changePic(this)">
+				<img src = "https://i.ytimg.com/vi/IKznGqc1_BQ/maxresdefault.jpg" onclick = "changePic(this)">
+				<img src = "https://i.pinimg.com/originals/df/e6/8e/dfe68e29faa0b8e6446dd0eb94103ee6.jpg"  onclick = "changePic(this)">
+			</div>
+
+			<div class = "main-container">
+				<img id = "imageBox" src = "https://i.ytimg.com/vi/IKznGqc1_BQ/maxresdefault.jpg">
+			</div>
+		</div>
+	</div>
+
+
+		<div class = "column" id = "para">
+
+			<h1> Hip Hop Dance</h1>
+<p>Freestyle hip hop dance is a type of dance that is characterized by its improvisational nature. It is a style that encourages dancers to express themselves through movement freely and creatively, without following a predetermined routine.
+
+One of the defining features of freestyle hip hop dance is the use of a variety of styles and techniques. Dancers may incorporate breaking, popping, locking, krumping, and other forms of hip hop dance into their performances. They may also incorporate movements from other styles of dance, such as contemporary, jazz, or ballet.
+
+Music plays a significant role in freestyle hip hop dance, with the dancer often using the beat and rhythm of the music to guide their movements. Dancers may choose to perform to a wide range of music genres, including hip hop, rap, R&B, and electronic dance music (EDM).
+
+In freestyle hip hop dance, the dancer is encouraged to let go of their inhibitions and allow their body to move spontaneously. This means that no two performances are the same, and dancers are free to experiment with different movements and combinations.
+
+While freestyle hip hop dance is often performed in a casual setting, such as a dance battle, it has also gained recognition as an art form. Many professional dancers incorporate freestyle elements into their routines, and competitions and festivals are held around the world to showcase the talents of freestyle hip hop dancers.
+
+Overall, freestyle hip hop dance is a style that encourages creativity, expression, and individuality, making it a favorite among dancers and audiences alike.</p>
+
+		</div>
+	</div>
+
+
+			</div>
+
+			<script>
+				function changePic (smallPic)
+				{
+					var mainImg = document.getElementById("imageBox");
+					mainImg.src = smallPic.src;
+
+				}
+			</script>
+
+
+	</body>
+	</html>
